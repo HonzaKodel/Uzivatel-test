@@ -42,7 +42,7 @@ public class Main {
         uzivatels.add(P3);
 
         for (Uzivatel uzivatel : uzivatels){
-            uzivatel.login();
+            System.out.println(uzivatel.login());
         }
     }
 }
