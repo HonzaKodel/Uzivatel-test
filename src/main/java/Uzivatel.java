@@ -13,6 +13,15 @@ public class Uzivatel {
         this.vek = vek;
     }
 
+    String login(){
+
+        System.out.println(String.format("Je přihlášen uživatel %s %s ve věku %s a jeho účet byl vytvočen %s",jmeno, prijimeni, vek, vytvoreno));
+
+        return null;
+    }
+
+
+
     public Date getVytvoreno() {
         return vytvoreno;
     }
