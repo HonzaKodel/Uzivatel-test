@@ -3,7 +3,7 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) throws ParseException {
 
         SimpleDateFormat DATE_FORMATER = new SimpleDateFormat("dd-MM-yyyy");
 
@@ -20,16 +20,16 @@ public class Main {
 
         List<Uzivatel> uzivatels = new ArrayList<>();
 
-            Uzivatel A1 = new Administrator("18-2-2020", "Helmut", "Heinz", 69, "580 259 581", "AdminHeinz");
-            Uzivatel A2 = new Administrator();
-            Uzivatel A3 = new Administrator();
+        Uzivatel A1 = new Administrator(DATE_FORMATER.parse("01-06-2077"), "Helmut", "Heinz", 69, "580 259 581", "AdminHeinz");
+        Uzivatel A2 = new Administrator(DATE_FORMATER.parse("29-02-2020"), "Marie", "Florencová", 23, "963 852 741", "MarieRules");
+        Uzivatel A3 = new Administrator(DATE_FORMATER.parse("01-01-2019"), "Arnošt", "Albrecht", 31, "789 456 123", "AA1");
 
-        Uzivatel C1 = new Ctenar();
-            Uzivatel C2 = new Ctenar();
-        Uzivatel C3 = new Ctenar();
+        Uzivatel C1 = new Ctenar(DATE_FORMATER.parse("08-09-2018"), "Adolf", "Rusnák", 45, 12, DATE_FORMATER.parse("04-07-2017"));
+        Uzivatel C2 = new Ctenar(DATE_FORMATER.parse("03-11-2016"), "Ondřej", "Postrčil", 85, 55, DATE_FORMATER.parse("01-03-1997"));
+        Uzivatel C3 = new Ctenar(DATE_FORMATER.parse("07-01-2003"), "František", "Popletal", 47, 26, DATE_FORMATER.parse("03-09-2001"));
 
-            Uzivatel P1 = new Pisalek();
-        Uzivatel P2 = new Pisalek();
-        Uzivatel P3 = new Pisalek();
+        Uzivatel P1 = new Pisalek(DATE_FORMATER.parse("05-04-2011"), "Herb", "Plot", 56, 45, DATE_FORMATER.parse("02-03-2014"));
+        Uzivatel P2 = new Pisalek(DATE_FORMATER.parse("09-02-2004"), "Albrecht", "Potěšil", 56, 78, DATE_FORMATER.parse("02-07-2015"));
+        Uzivatel P3 = new Pisalek(DATE_FORMATER.parse("07-05-2017"), "Jana", "Umyvadlová", 15, 24, DATE_FORMATER.parse("01-06-2018"));
     }
 }
