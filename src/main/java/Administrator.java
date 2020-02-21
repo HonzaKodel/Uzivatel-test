@@ -30,7 +30,7 @@ public class Administrator extends Uzivatel {
 
     @Override
     String login() {
-        return String.format("Uživatel typu %s se jménem %s %s ve věku %s je zrovna přihlášen", getClass(), getJmeno(), getPrijimeni(), getVek());
+        return String.format("Uživatel typu %s se jménem %s %s ve věku %s se zrovna přihlásil, účet byl vytvořen %s", getClass(), getJmeno(), getPrijimeni(), getVek(), getVytvoreno());
 
     }
 }

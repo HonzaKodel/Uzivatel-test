@@ -7,17 +7,6 @@ public class Main {
 
         SimpleDateFormat DATE_FORMATER = new SimpleDateFormat("dd-MM-yyyy");
 
-        String formatDatum = "18-02-2020";
-        Calendar calendar = new GregorianCalendar(2020, 2, 21);
-        Date date = null;
-        {
-            try {
-                date = DATE_FORMATER.parse(formatDatum);
-            } catch (ParseException e) {
-                e.printStackTrace();
-            }
-        }
-
         List<Uzivatel> uzivatels = new ArrayList<>();
 
         Uzivatel A1 = new Administrator(DATE_FORMATER.parse("01-06-2077"), "Helmut", "Heinz", 69, "580 259 581", "AdminHeinz");
