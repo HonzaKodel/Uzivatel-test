@@ -16,7 +16,6 @@ abstract public class Uzivatel {
     abstract String login();
 
 
-
     public Date getVytvoreno() {
         return vytvoreno;
     }

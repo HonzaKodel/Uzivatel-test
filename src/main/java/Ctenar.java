@@ -27,4 +27,10 @@ public class Ctenar extends Uzivatel{
     public void setUcetZalozen(Date ucetZalozen) {
         this.ucetZalozen = ucetZalozen;
     }
+
+    @Override
+    String login() {
+        String ctenar = System.out.println(String.format("Uživatel typu %s se jménem %s %s ve věku %s je zrovna přihlášen", getClass(), getJmeno(),getPrijimeni(), getVek());
+        return ctenar;
+    }
 }

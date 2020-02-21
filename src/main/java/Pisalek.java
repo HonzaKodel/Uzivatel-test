@@ -27,4 +27,10 @@ public class Pisalek extends Uzivatel {
     public void setPosledniPrihlaseni(Date posledniPrihlaseni) {
         this.posledniPrihlaseni = posledniPrihlaseni;
     }
+
+    @Override
+    String login() {
+        String pisalek = System.out.println(String.format("Uživatel typu %s se jménem %s %s ve věku %s je zrovna přihlášen", getClass(), getJmeno(),getPrijimeni(), getVek());
+        return pisalek;
+    }
 }

@@ -27,4 +27,10 @@ public class Administrator extends Uzivatel {
     public void setNazevUctu(String nazevUctu) {
         this.nazevUctu = nazevUctu;
     }
+
+    @Override
+    String login() {
+        String admin = System.out.println(String.format("Uživatel typu %s se jménem %s %s ve věku %s je zrovna přihlášen", getClass(), getJmeno(),getPrijimeni(), getVek());
+        return admin;
+    }
 }
