@@ -5,7 +5,7 @@ public class Pisalek extends Uzivatel {
     private Integer napsanoKnih;
     private Date posledniPrihlaseni;
 
-    public Pisalek(Date vytvoreno, String jmeno, String prijimeni, Integer vek, Integer napsanoKnih, Date posledniPrihlaseni){
+    public Pisalek(Date vytvoreno, String jmeno, String prijimeni, Integer vek, Integer napsanoKnih, Date posledniPrihlaseni) {
         super(vytvoreno, jmeno, prijimeni, vek);
 
         this.napsanoKnih = napsanoKnih;
@@ -30,7 +30,7 @@ public class Pisalek extends Uzivatel {
 
     @Override
     String login() {
-        String pisalek = System.out.println(String.format("Uživatel typu %s se jménem %s %s ve věku %s je zrovna přihlášen", getClass(), getJmeno(),getPrijimeni(), getVek());
-        return pisalek;
+        return String.format("Uživatel typu %s se jménem %s %s ve věku %s je zrovna přihlášen", getClass(), getJmeno(), getPrijimeni(), getVek());
+
     }
 }

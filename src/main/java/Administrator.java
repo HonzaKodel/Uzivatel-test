@@ -5,7 +5,7 @@ public class Administrator extends Uzivatel {
     private String telCislo;
     private String nazevUctu;
 
-    public Administrator (Date vytvoreno, String jmeno, String prijimeni, Integer vek, String telCislo, String nazevUctu){
+    public Administrator(Date vytvoreno, String jmeno, String prijimeni, Integer vek, String telCislo, String nazevUctu) {
         super(vytvoreno, jmeno, prijimeni, vek);
 
         this.telCislo = telCislo;
@@ -30,7 +30,7 @@ public class Administrator extends Uzivatel {
 
     @Override
     String login() {
-        String admin = System.out.println(String.format("Uživatel typu %s se jménem %s %s ve věku %s je zrovna přihlášen", getClass(), getJmeno(),getPrijimeni(), getVek());
-        return admin;
+        return String.format("Uživatel typu %s se jménem %s %s ve věku %s je zrovna přihlášen", getClass(), getJmeno(), getPrijimeni(), getVek());
+
     }
 }
