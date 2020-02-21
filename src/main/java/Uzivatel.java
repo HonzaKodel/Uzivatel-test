@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public class Uzivatel {
+abstract public class Uzivatel {
     private Date vytvoreno;
     private String jmeno;
     private String prijimeni;
@@ -13,12 +13,7 @@ public class Uzivatel {
         this.vek = vek;
     }
 
-    String login(){
-
-        System.out.println(String.format("Je přihlášen uživatel %s %s ve věku %s a jeho účet byl vytvočen %s",jmeno, prijimeni, vek, vytvoreno));
-
-        return null;
-    }
+    abstract String login();
 
 
 
